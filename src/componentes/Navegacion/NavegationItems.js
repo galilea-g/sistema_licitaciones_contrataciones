@@ -5,7 +5,7 @@ import NavigationItem from './NavigationItem/NavigationItem';
 
 
 const navigationItems = () => (
-    <ul className="NavigationItems">
+    <ul id="nav-mobile" class="right NavigationItems">
         <NavigationItem link="/" active>Inicio</NavigationItem>
         <NavigationItem link="/">Personalizacion</NavigationItem>
         <NavigationItem link="/">Licitaciones</NavigationItem>
