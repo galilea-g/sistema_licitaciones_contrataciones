@@ -9,6 +9,9 @@ import App from "./App";
 import Catalogos from "./componentes/Catalogos/Catalogos"
 import Dashboard from "./componentes/Admin/Dashboard/Dashboard"
 
+
+
+
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
