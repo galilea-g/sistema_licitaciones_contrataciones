@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './Layout.css';
-import Aux from '../Aux/Aux';
+import Aux from '../Auxi/Auxi';
 import Toolbar from '../../componentes/Navegacion/Toolbar';
 
 
