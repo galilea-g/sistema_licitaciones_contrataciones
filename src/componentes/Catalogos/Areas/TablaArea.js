@@ -52,7 +52,7 @@ const tableHeaders = [
             <TableC 
             width="90%"
               headers={tableHeaders}
-              registros={props.areas}
+              records={props.areas}
               config={tableConfig}
             />              
             </div>
