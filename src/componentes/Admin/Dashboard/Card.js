@@ -1,3 +1,4 @@
+
 import "./Dashboard.css" 
 import TableC from "../../UI/Table/Table";
 
@@ -50,5 +51,6 @@ function Card(props){
 
     );
 }
+
 
 export default Card;

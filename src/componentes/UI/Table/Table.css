@@ -1,0 +1,25 @@
+.table__thId{
+  overflow: 'hidden',
+}
+
+.table__adjust{
+  width: auto;
+}
+
+.text{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.text.ellipsis::after {
+  content: "...";
+  position: absolute;
+  right: -12px; 
+  bottom: 4px;
+}
+
+.table__trOver{
+  cursor: pointer;
+}
