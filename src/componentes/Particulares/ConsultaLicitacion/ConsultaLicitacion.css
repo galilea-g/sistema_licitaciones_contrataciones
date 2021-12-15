@@ -1,0 +1,10 @@
+.labelLlave{
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.labelValue{
+    font-size: 1.3rem;
+    color: #727272;
+    margin-left: .5rem;
+}

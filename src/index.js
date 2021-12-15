@@ -8,7 +8,9 @@ import App from "./App";
 
 import Catalogos from "./componentes/Catalogos/Catalogos"
 import Dashboard from "./componentes/Admin/Dashboard/Dashboard"
-import CatalogoEtapas from "./componentes/Catalogos/Areas/Areas";
+import CatalogoAreas from "./componentes/Catalogos/Areas/Areas";
+import CatalogoEtapas from "./componentes/Catalogos/Etapas/Etapas";
+import ParticularesIndex from "./componentes/Particulares/Particulares";
 
 
 
@@ -20,7 +22,10 @@ render(
       <Route path="/" element={<App />}>
         <Route path="catalogos" element={<Catalogos />} />
         <Route path="login" element={<Dashboard />} />
-        <Route path="areas" element={<CatalogoEtapas />} />
+        <Route path="areas" element={<CatalogoAreas />} />
+        <Route path="etapas" element={<CatalogoEtapas />} />
+        <Route path="particulares" element={<ParticularesIndex />} />
+
       </Route>
     </Routes>
   </BrowserRouter>,
