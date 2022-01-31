@@ -10,7 +10,7 @@ import returnimage from './returnimage.png';
 {/* 
   Junta el componente de la tabla y del formulario, lo abre en un modal
 */} 
-function CatalogoEtapas() {
+function CatalogoAreas() {
   
   
   {/* 
@@ -91,4 +91,4 @@ function CatalogoEtapas() {
   );
 }
 
-export default CatalogoEtapas;
+export default CatalogoAreas;
