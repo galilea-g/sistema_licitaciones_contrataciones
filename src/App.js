@@ -1,16 +1,15 @@
-import React, {Component} from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
+import './index.css';
 
-import Layout from './hoc/Layout/Layout';
+import NavigationBar from "./componentes/Navegacion/NavigationBar"
 
-class App extends Component{
-  render(){
-    return(
-      <div >
-        <Layout/>
-      </div>
-    )
-  }
+function App() {
+  return (
+    <div >
+    <NavigationBar />
+    <div className="body">
+    </div>
+   </div>
+  );
 }
 
 export default App;

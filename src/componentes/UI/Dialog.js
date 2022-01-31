@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 
 import Button from '@mui/material/Button';
@@ -99,3 +100,6 @@ const DialogComponent = (props) => {
 }
 
 export default DialogComponent;
+=======
+
+>>>>>>> d6c206f955326ae3df41044b8f68e0e98442bc69
