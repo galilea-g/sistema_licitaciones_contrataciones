@@ -16,48 +16,68 @@ import {
 
 import Stack from '@mui/material/Stack';
 
+import DialogComponent from '../../../UI/Dialog';
 import './Formulario.css';
 
-const FormularioBsuquedaLicitaciones = (props) => {
-    const [folio, setFolio] = useState('');
-    const [titulo, setTitulo] = useState('');
-    const [fechaCreacionInicio, setFechaCreacionInicio] = useState('');
-    const [fechaCreacionFin, setFechaCreacionFin] = useState('');
-    const [area, setArea] = useState('');
-
-
-    const handler_folio = event => {
-        setFolio(event.target.value);
+/**
+ * Component which show form and get search data from the user
+ * 
+ * @param {onBuscarLicitaciones} onBuscarLicitaciones Function: Execute search of data
+ * @author Galilea Granados <galilea.granados@sesaj.org>
+ * 
+ */
+const FormularioBusquedaLicitaciones = (props) => {
+    const [dialogOpen, setDialogOpen] = useState(false);
+    const [area, setArea] = useState("");
+    
+    
+    const f_closeDialog = () => {
+        setDialogOpen(false);
     }
+    
+    const initialFormData = Object.freeze({
+        titulo: "",
+        folio: "",
+        area: "",
+        etapa: "",
+        responsable: ""
+    });
+    const [formularioData, updateFormData] = React.useState(initialFormData);
 
-    const handler_titulo = event => {
-        setTitulo(event.target.value);
-    }
-
-    const handler_fechaInicio = event => {
-        setFechaCreacionInicio(event.target.value);
-    }
-
-    const handler_fechaFin = event => {
-        setFechaCreacionFin(event.target.value);
-    }
+    const handleChange = (e) => {
+        updateFormData({
+          ...formularioData,
+    
+          // Trimming any whitespace
+          [e.target.name]: e.target.value.trim()
+        });
+      };
 
     const submitHandler = (event) => {
         event.preventDefault();
-        
-        const formularioData = {
-            folio: folio,
-            titulo: titulo,
-            fechaInicio: new Date(fechaCreacionInicio),
-            FechaFin: new Date(fechaCreacionFin)
-        }
-
+        console.log(formularioData);
         props.onBuscarLicitaciones(formularioData);
     }
 
     const handleChangeSelectBusqueda = (event) => {
+        updateFormData({
+            ...formularioData,
+      
+            // Trimming any whitespace
+            [event.target.name]: event.target.value
+        });
         setArea(event.target.value);
-      };
+    };
+
+    const handlerAgregarLicitacion = () => {
+        setDialogOpen(true);
+    }
+
+    const configDialog = {
+        openDialog:dialogOpen,
+        fCloseModal: f_closeDialog,
+        title: "Agregar nueva licitación"
+    }
     
 
     return (
@@ -73,6 +93,7 @@ const FormularioBsuquedaLicitaciones = (props) => {
                                     label="Folio licitación"
                                     fullWidth
                                     margin="dense"
+                                    onChange={handleChange}
                                 />
                             </Grid>
                             <Grid item xs={12} sm={4}>
@@ -82,6 +103,7 @@ const FormularioBsuquedaLicitaciones = (props) => {
                                     label="Titulo de la licitación"
                                     fullWidth
                                     margin="dense"
+                                    onChange={handleChange}
                                 />
                             </Grid>
                             <Grid item xs={12} sm={4}>
@@ -90,6 +112,7 @@ const FormularioBsuquedaLicitaciones = (props) => {
                                     <Select
                                         labelId="selectArea_label"
                                         id="selectArea_label_id"
+                                        name="area"
                                         value={area}
                                         label="Area"
                                         onChange={handleChangeSelectBusqueda}
@@ -130,6 +153,7 @@ const FormularioBsuquedaLicitaciones = (props) => {
                                         id="selectEtapa_label_id"
                                         value={area}
                                         label="Etapa"
+                                        name="etapa"
                                         onChange={handleChangeSelectBusqueda}
                                     >
                                         <MenuItem value={10}>Etapa 1</MenuItem>
@@ -146,6 +170,7 @@ const FormularioBsuquedaLicitaciones = (props) => {
                                         id="selectResponsable_label_id"
                                         value={area}
                                         label="Responsable"
+                                        name="responsable"
                                         onChange={handleChangeSelectBusqueda}
                                     >
                                         <MenuItem value={10}>Responsable 1</MenuItem>
@@ -160,12 +185,13 @@ const FormularioBsuquedaLicitaciones = (props) => {
                         </Grid>
                     </form>
                 </Grid>
+                <DialogComponent {...configDialog} ></DialogComponent>
                 <Grid className="busqueda-licitacion__agregar" item xs={2}>
-                    <Button type='submit' color='primary' variant='contained'>+</Button>
+                    <Button type='submit' color='primary' variant='contained' onClick={handlerAgregarLicitacion}>+</Button>
                 </Grid>
             </Grid>
         </Paper>
     )
 }
 
-export default FormularioBsuquedaLicitaciones;
+export default FormularioBusquedaLicitaciones;

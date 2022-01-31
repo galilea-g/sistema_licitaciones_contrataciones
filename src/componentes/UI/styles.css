@@ -72,15 +72,14 @@
 }
 
 .Dialog__actions button{
-  background: #006078;
+  background: #b3d6df;
   font-size: 15px;
-  color: snow;
+  color: #006078;
   width: 150px;
   height: 40px;
-  border: none;
-  border-radius: 2mm;
 }
 
 .Dialog__actions button:hover{
-  background: #5b92a0;
+  background: #006078;
+  color: #ffffff;
 }

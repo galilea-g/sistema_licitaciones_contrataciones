@@ -1,0 +1,589 @@
+{
+    "licitaciones": [
+      {
+        "id": 1,
+        "titulo": "Titulo 1",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Titulo 2  de prueba",
+        "folio":"454968484asadf787df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 2, 
+                "costo": 15000,
+                "monto": 60000,
+                "desripcion":"En esta partida se agrego una descripción"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"Nuevo responsable asignado a esta licitación"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"nUEVO SERVIDOR AGREGADO",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Titulo 3",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 4,
+        "titulo": "Titulo 4",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 5,
+        "titulo": "Titulo 5",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 7,
+        "titulo": "Titulo 7",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 8,
+        "titulo": "Titulo 8",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 9,
+        "titulo": "Titulo 9",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 10,
+        "titulo": "Titulo 10",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 11,
+        "titulo": "Titulo 11",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 12,
+        "titulo": "Titulo 12",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 13,
+        "titulo": "Titulo 13",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 14,
+        "titulo": "Titulo 14",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 16,
+        "titulo": "Titulo 16",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      },
+      {
+        "id": 17,
+        "titulo": "Titulo 17",
+        "folio":"454968484asdf49as87df9874a9sd7f9a8s7df9",
+        "objetivo": "Lorem",
+        "fecha_registro": "21-01-2022",
+        "fecha_asignacion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla, tempore consectetur cumque culpa, error veritatis unde libero perferendis eum facilis accusamus commodi inventore dolor nemo laborum blanditiis sapiente necessitatibus?",
+        "area": 1,
+        "tipo": "SIN ASIGNAR",
+        "estado": "Cerrada,Cancelada",
+        "partidas": 2,
+        "partidasDetalles": 
+        [
+            {
+                "partida": 1, 
+                "costo": 2000,
+                "monto": 15600,
+                "desripcion":"sin descripcion"
+            }
+        ],
+        "etapas":
+        [
+            {
+                "etapa":
+                {
+                    "id":1,
+                    "nombre":"Registro"
+                },
+                "fecha":"21-01-2022", 
+                "responsable":"fulanito"
+            }
+        ],
+        "servidores": [
+            {
+                "nombre":"Nombre completo del servidor",
+                "rol": "Jefe del area de OIC"
+            }
+        ]
+      }
+    ]
+  }
