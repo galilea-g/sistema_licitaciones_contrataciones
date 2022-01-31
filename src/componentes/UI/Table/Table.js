@@ -218,6 +218,8 @@ EnhancedTableToolbar.propTypes = {
  * @param array-objects registros
  * @param array-objects headers
  * @function fGetDataRow Función padre a la cual se le regresa el valor ID obtenido del registro
+ * 
+ * @author Galilea Granados <galilea.granados@sesaj.org>
  *  
 */
 const EnhancedTable = (props) => {
@@ -361,6 +363,7 @@ const EnhancedTable = (props) => {
                   return (
                     <TableRow
                       hover
+                      key={"keyRow_" + row.id}
                       id={"row_" + row.id}
                       onClick={(event) => handler_clickRow(event, row.id, props)}
                       role="checkbox"
@@ -381,7 +384,7 @@ const EnhancedTable = (props) => {
                           />
                         }                      
                       </TableCell>
-                      {/*Se agregarn los registros tomando las llaves por registro */}
+                      {/*Se agregaron los registros tomando las llaves por registro */}
                       {keysRow.map((keyRow, index) => {
                         return(
                           <TableCell align="left">
