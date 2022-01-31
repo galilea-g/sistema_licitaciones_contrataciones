@@ -56,7 +56,7 @@ return (
      :<>
       <NavItem  className="navlinks" nombre="Login"liga="/login"/>
       <NavItem  className="navlinks" nombre="Catalogos" liga="/catalogos"/>
-      <NavItem  className="navlinks" nombre="Licitaciones" liga="/catalogos"/>
+      <NavItem  className="navlinks" nombre="Licitaciones" liga="/licitaciones"/>
       <DropDownMenu nombre ='Edición' ligasMenu={itemsDrop} />
       <DropDownMenu nombre ='Busqueda' ligasMenu={itemsDos} />
       </>
