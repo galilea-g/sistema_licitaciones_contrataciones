@@ -11,6 +11,7 @@ import Dashboard from "./componentes/Admin/Dashboard/Dashboard"
 import CatalogoAreas from "./componentes/Catalogos/Areas/Areas";
 import CatalogoEtapas from "./componentes/Catalogos/Etapas/Etapas";
 import ParticularesIndex from "./componentes/Particulares/Particulares";
+import RegistroParticulares from "./componentes/Particulares/Registro_particulares";
 
 
 
@@ -25,6 +26,7 @@ render(
         <Route path="areas" element={<CatalogoAreas />} />
         <Route path="etapas" element={<CatalogoEtapas />} />
         <Route path="particulares" element={<ParticularesIndex />} />
+        <Route path="registroparticulares" element={<RegistroParticulares />} />
 
       </Route>
     </Routes>
