@@ -4,7 +4,7 @@ import { Grid, Box, Button } from "@mui/material";
 import Login from "../Login/Login";
 import Card from "./Card";
 import InfoPersonal from "./InfoPersonalCard";
-import FormAlert from "./FormAlert";
+import EditInfoPersonal from "./EditInfoPersonal";
 import "./Dashboard.css";
 const licitaciones = [
   {
@@ -53,7 +53,7 @@ const usuariosRegistrados = [
   },
 
 ];
-const usuarios={
+const usuarios=[{
   nombre: 'Daniel Alejandro Gutiérrez Hernández',
   area: 'Dirección de Tecnologías y Plataformas',
   entidad:'SESAJ',
@@ -61,24 +61,19 @@ const usuarios={
   permisos:'Administrador',
   email:'daniel@gmail.com',
   pass:'Daniel11'
-} 
+}]
 
 function Dashboard() {
   //arreglo datos de usuario
   const [user, setUser] = useState(usuarios);  
+  const [sentUser, setSentUser] = useState(usuarios);  
   //variable de sesión
   const [loggedIn, setLogStatus] = useState(false); 
     /** 
       Toma el valor de localStorage y valida si es = 1
       Si lo es, coloca el valor de sesión = true
     */
-  useEffect(() =>  {
-    
-    const sesionInformacion = localStorage.getItem('isLoggedIn');
-    if(sesionInformacion === '1'){
-      setLogStatus(true);
-    }
-  }, [])
+ 
     /**
       función handler_updateUser
       Actualiza la información del usuario con la sesión abierta
@@ -88,15 +83,25 @@ function Dashboard() {
     */
   const handler_updateUser = (personalD) => {
    
-    setUser({...personalD});
+    setSentUser({...personalD});
+    setUser(prevArray  => [...prevArray , personalD]);
+
+    
   };
+  const handler_guardarUsuario = (personalD) =>{
+    setUser(prevArray  => [...prevArray , personalD]);
+    console.log(user)
+    
+  }
     /** 
       función handler_login
       actualiza la variable de sesión a true
+      envía a InfoPersonal la información del usuario con la sesión activa
     */
-  const handler_login= () =>{
+  const handler_login= (id) =>{
     setLogStatus(true);
     localStorage.setItem('isLoggedIn', '1');
+    setSentUser(user[id]);
   };
   /**
       función handler_login
@@ -112,7 +117,8 @@ function Dashboard() {
     <Grid container>
       <Grid item xs={12} sm={12}>
         <Box textAlign='center' sx={{ width: 1/3 }} m="auto" pt={3}>
-            <Login onLogin={handler_login} users={user}/>
+            <Login onLogin={handler_login} users={user}
+            onGuardarUsuario={handler_guardarUsuario}/>
         </Box>
 
       </Grid>
@@ -137,14 +143,14 @@ function Dashboard() {
       </Grid>
       <Grid item xs={12} sm={3} m={2}>
         <InfoPersonal
-          data={user}
+          data={sentUser}
         />
         <Box textAlign='center'>
-        <FormAlert
+        <EditInfoPersonal
           onUpdateUser={handler_updateUser}
           title="Editar información personal"
-          data={user}
-        ></FormAlert>
+          data={sentUser}
+        ></EditInfoPersonal>
         </Box>
       </Grid>
      

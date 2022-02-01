@@ -42,7 +42,7 @@ function Card(props){
             <div>
             <TableC 
             	headers={tableHeaders}
-            	registros={props.data}
+            	records={props.data}
             	config={tableConfig}
             />              
             </div>

@@ -1,7 +1,5 @@
 
-import React, { Component } from "react";
 import {    Typography, Box } from "@mui/material";
-import Popup from "./FormAlert";
 import "./Dashboard.css";
 
 function InfoPersonal(props) {
