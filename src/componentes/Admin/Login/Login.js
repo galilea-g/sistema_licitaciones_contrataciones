@@ -3,8 +3,12 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import {    Typography } from "@mui/material";
+import Registro from "../../Admin/Dashboard/Registro"
 
 
+/*
+Añadir Autor, funcionalidad y contenido de los props
+*/ 
 export default function FormDialog(props) {
   //variable del correo
   const [enteredEmail, setEnteredEmail] = useState(''); 
@@ -27,26 +31,28 @@ export default function FormDialog(props) {
     }
     setEnteredPass(event.target.value)
   }
+  const handler_updateUser = (personalD) => {
+    props.onGuardarUsuario(personalD)
+  }
     /**
       Función handler_submitLogin
       valida si el usuario y la contraseña ingresados son correctos
 
     */
+   
   const handler_submitLogin = (event) => {
 
    
     event.preventDefault();
-    if(props.users['email'] == enteredEmail){
-        if(props.users['pass'] == enteredPass){
-            props.onLogin();
-            setValided(true);
-        }
-        else{
-          setValided(false);
-        }
+    //Busca en la lista de usuarios conicidencia de email y contraseña
+    const isUserValid = (user) => user.email === enteredEmail && user.pass === enteredPass; 
+    if(props.users.find(isUserValid)){
+      let id = props.users.findIndex(isUserValid) 
+      props.onLogin(id);//Acepta el login y regresa el id del usuario que ingresa
+      setValided(true);//Valida el formulario
     }
     else{
-      setValided(false);
+      setValided(false);//Invalida el formulario
     }
 }
   return (
@@ -99,7 +105,13 @@ export default function FormDialog(props) {
             onChange={onChangePass}
 
           />
-          <Button onClick={handler_submitLogin}>Guardar</Button>
+          <Button onClick={handler_submitLogin}>Entrar</Button>
+          <Registro
+          title="Crear usuario nuevo"
+          data=''
+          onUpdateUser={handler_updateUser}
+
+        ></Registro>
           
         </form>
     </div>
