@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './Layout.css';
 import Aux from '../Auxi/Auxi';
 import Toolbar from '../../componentes/Navegacion/Toolbar';
+import Licitaciones from '../../componentes/Licitaciones/Licitaciones';
 
 
 class Layout  extends Component {
@@ -10,9 +11,9 @@ class Layout  extends Component {
         return(
             <Aux>
                 <Toolbar/>
-                <main className="Content">
-                    {this.props.children}
-                </main>
+                <div className="Content">
+                    <Licitaciones/>
+                </div>
             </Aux>
         )
     }

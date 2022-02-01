@@ -1,4 +1,4 @@
-.Toolbar{
+.Header{
     height: 80px;
     width: 100%;
     position: fixed;
@@ -8,18 +8,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
     box-sizing: border-box;
     z-index: 90;
 }
 
-.Toolbar nav{
+.Header nav{
     height: 100%;
 }
 
-.Logo {
-    height: 80%;
+.Header nav > div{
+    background-color: #DDDCDC;
 }
+
 
 @media(max-width:499px){
     .DesktopOnly{

@@ -1,5 +1,4 @@
 import "./Dashboard.css" 
-import TableC from "../../UI/Table/Table";
 
 function Card(props){
 	 const tableHeaders = [
@@ -40,11 +39,7 @@ function Card(props){
         <div>
             <div className="title">{props.title}</div>
             <div>
-            <TableC 
-            	headers={tableHeaders}
-            	records={props.data}
-            	config={tableConfig}
-            />              
+                  
             </div>
           </div>
 

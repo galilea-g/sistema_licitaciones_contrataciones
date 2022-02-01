@@ -1,0 +1,8 @@
+.Tab__licitacionTabs{
+    color:#006078;
+    width: 100%;
+}
+
+.Tab__licitacionTabs button:focus {
+    background-color: #00607833;
+}
