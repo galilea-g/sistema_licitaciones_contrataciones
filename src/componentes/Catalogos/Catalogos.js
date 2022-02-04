@@ -4,7 +4,6 @@ import { Modal, Button } from "@material-ui/core";
 import AreaTabla from "./Areas/TablaArea";
 import useStyles from "./Modal/Estilos";
 import { Link } from "react-router-dom";
-import InputAdornments from "../Particulares/Registro_particulares";
 function Catalogos() {
      {/* 
   Carga los estilos para el modal
