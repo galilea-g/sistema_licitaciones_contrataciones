@@ -1,5 +1,5 @@
 import RegistroParticulares from "./Registro_particulares";
-import BusquedaLicitaciones from "./BusquedaParticulares/BusquedaLicitacion";
+import BusquedaParticular from "./BusquedaParticulares/BusquedaPartcular";
 
 function ParticularesIndex() {
   
@@ -12,12 +12,11 @@ function ParticularesIndex() {
   
     return (
       <div align="center">
-     <BusquedaLicitaciones></BusquedaLicitaciones>
+     <BusquedaParticular></BusquedaParticular>
      <br />
      <RegistroParticulares></RegistroParticulares>
       </div>
     );
   }
   export default ParticularesIndex;
-  
   
