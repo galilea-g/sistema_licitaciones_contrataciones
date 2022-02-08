@@ -5,9 +5,8 @@ import './ResultadoBusqueda.css';
 import Grid from '@mui/material/Grid';
 
 import Table from '../../../UI/Table/Table';
-import Spinner from '../../../UI/Spinner';
 import DialogComponent from '../../../UI/Dialog';
-import ConsultaLicitacion from '../../ConsultaLicitacion/ConsultaLicitacion';
+import ConsultaParticular from '../../ConsultaParticular/ConsultaParticular';
 
 const ResultadoBusqueda = (props) => {
     //Se cambiará este arreglo por un servicio que irá a buscar a la DB
@@ -97,7 +96,6 @@ const ResultadoBusqueda = (props) => {
     }
 
     if(props.loadingData){
-        cm_mensajeResultadoBusqueda = <Spinner/>;
     }
 
     const f_getDataRow = (idRow) => {
@@ -153,7 +151,7 @@ const ResultadoBusqueda = (props) => {
             closeModal={f_closeDialog}
             title="Resumen de la licitación"
         >
-            <ConsultaLicitacion
+            <ConsultaParticular
                 idData={idRowData}
             />
         </DialogComponent>

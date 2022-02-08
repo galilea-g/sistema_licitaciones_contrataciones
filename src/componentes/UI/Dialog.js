@@ -99,3 +99,7 @@ const DialogComponent = (props) => {
 }
 
 export default DialogComponent;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 28e7c890a18b871bdbcea9cb27e1658a18aa5c0c
