@@ -14,7 +14,7 @@ function ParticularesIndex() {
       <div align="center">
      <BusquedaParticular></BusquedaParticular>
      <br />
-     <RegistroParticulares></RegistroParticulares>
+     
       </div>
     );
   }

@@ -19,6 +19,7 @@ import FormGroup from '@mui/material/FormGroup';
 import { makeStyles } from "@material-ui/core/styles";
 import  { useState } from "react";
 import { Modal, Button, Grid } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 
 function RegistroParticulares() {
@@ -133,7 +134,7 @@ function RegistroParticulares() {
   
 
   return (
-    <div>
+    <div align="center">
       <h1>Nuevo Particular</h1>
       <hr id="hr"></hr>
       <Box sx={{ display: "flex", flexWrap: "wrap", width: 1000, }}>
@@ -283,7 +284,7 @@ function RegistroParticulares() {
               linea de ayuda prueba
             </FormHelperText>
           </FormControl>
-          <Button type='submit' color='primary' variant='raised'>Guardar</Button>
+          <Link to="/particulares" className="link"><Button type='submit' color='primary' variant='raised'>Guardar</Button></Link>
         </div>
       </Box>
     </div>

@@ -17,6 +17,7 @@ import {
 import Stack from '@mui/material/Stack';
 
 import './Formulario.css';
+import { Link } from "react-router-dom";
 
 const FormularioBsuquedaParticulares = (props) => {
     const [folio, setFolio] = useState('');
@@ -139,7 +140,7 @@ const FormularioBsuquedaParticulares = (props) => {
                     </form>
                 </Grid>
                 <Grid className="busqueda-particular__agregar" item xs={2}>
-                    <Button type='submit' color='primary' variant='contained'>+</Button>
+                    <Link to="/registroparticulares" className="link"><Button type='submit' color='primary' variant='contained'>+</Button></Link>
                 </Grid>
             </Grid>
         </Paper>
