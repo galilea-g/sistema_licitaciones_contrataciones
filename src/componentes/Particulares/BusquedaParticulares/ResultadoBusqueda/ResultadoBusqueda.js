@@ -73,7 +73,7 @@ const ResultadoBusqueda = (props) => {
     const [idRowData, setidRowData] = useState(null);
     
     if(props.loadingData){
-        //Se va a reemplazar por el servicio de obtención de licitaciones
+        //Se va a reemplazar por el servicio de obtención de particulares
         setTimeout(
             function() {
                 setResultadosBusqueda([
@@ -135,23 +135,23 @@ const ResultadoBusqueda = (props) => {
     ];
 
     const resultadosBusqueda2 = [
-        {id: 1,idC: Math.random(), info: "Titulo de la licitacion 1", estatus: "01/01/2021"},
-        {id: 2,idC: Math.random(), info:"Titulo de la licitacion 2", estatus:"01/01/2021"},
-        {id: 3,idC: Math.random(), info:"Titulo de la licitacion 3", estatus:"01/01/2021"},
-        {id: 4,idC: Math.random(), info:"Titulo de la licitacion 4", estatus:"01/01/2021"},
-        {id: 5,idC: Math.random(), info:"Titulo de la licitacion 5", estatus:"01/01/2021"},
-        {id: 6,idC: Math.random(), info: "Titulo de la licitacion 1", estatus: "01/01/2021"},
-        {id: 7,idC: Math.random(), info:"Titulo de la licitacion 2", estatus:"01/01/2021"},
-        {id: 8,idC: Math.random(), info:"Titulo de la licitacion 3", estatus:"01/01/2021"},
-        {id: 9,idC: Math.random(), info:"Titulo de la licitacion 4", estatus:"01/01/2021"},
-        {id: 10,idC: Math.random(), info:"Titulo de la licitacion 5", estatus:"01/01/2021"}
+        {id: 1,idC: Math.random(), info: "Titulo de la particular 1", estatus: "01/01/2021"},
+        {id: 2,idC: Math.random(), info:"Titulo de la particular 2", estatus:"01/01/2021"},
+        {id: 3,idC: Math.random(), info:"Titulo de la particular 3", estatus:"01/01/2021"},
+        {id: 4,idC: Math.random(), info:"Titulo de la particular 4", estatus:"01/01/2021"},
+        {id: 5,idC: Math.random(), info:"Titulo de la particular 5", estatus:"01/01/2021"},
+        {id: 6,idC: Math.random(), info: "Titulo de la particular 1", estatus: "01/01/2021"},
+        {id: 7,idC: Math.random(), info:"Titulo de la particular 2", estatus:"01/01/2021"},
+        {id: 8,idC: Math.random(), info:"Titulo de la particular 3", estatus:"01/01/2021"},
+        {id: 9,idC: Math.random(), info:"Titulo de la particular 4", estatus:"01/01/2021"},
+        {id: 10,idC: Math.random(), info:"Titulo de la particular 5", estatus:"01/01/2021"}
     ]
 
-    return <div className="registros-licitacion">
+    return <div className="registros-particular">
         <DialogComponent
             openDialog={dialogOpen}
             closeModal={f_closeDialog}
-            title="Resumen de la licitación"
+            title="Resumen del particular"
         >
             <ConsultaParticular
                 idData={idRowData}

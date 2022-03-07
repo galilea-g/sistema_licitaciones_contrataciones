@@ -18,7 +18,7 @@ import Stack from '@mui/material/Stack';
 
 import './Formulario.css';
 
-const FormularioBsuquedaLicitaciones = (props) => {
+const FormularioBsuquedaParticulares = (props) => {
     const [folio, setFolio] = useState('');
     const [titulo, setTitulo] = useState('');
     const [fechaCreacionInicio, setFechaCreacionInicio] = useState('');
@@ -52,7 +52,7 @@ const FormularioBsuquedaLicitaciones = (props) => {
             FechaFin: new Date(fechaCreacionFin)
         }
 
-        props.onBuscarLicitaciones(formularioData);
+        props.onBuscarParticulares(formularioData);
     }
 
     const handleChangeSelectBusqueda = (event) => {
@@ -77,8 +77,8 @@ const FormularioBsuquedaLicitaciones = (props) => {
                             </Grid>
                             <Grid item xs={12} sm={4}>
                                 <TextField
-                                    id="tituloLicitacion"
-                                    name="tituloLicitacion_id"
+                                    id="tituloPerticular"
+                                    name="tituloPerticular_id"
                                     label="APELLIDO PARTICULAR"
                                     fullWidth
                                     margin="dense"
@@ -101,8 +101,8 @@ const FormularioBsuquedaLicitaciones = (props) => {
                             </Grid>
                             <Grid item xs={12} sm={4}>
                                 <TextField
-                                    id="tituloLicitacion"
-                                    name="tituloLicitacion_id"
+                                    id="tituloPerticular"
+                                    name="tituloPerticular_id"
                                     label="RFC"
                                     fullWidth
                                     margin="dense"
@@ -110,8 +110,8 @@ const FormularioBsuquedaLicitaciones = (props) => {
                             </Grid>
                             <Grid item xs={12} sm={4}>
                                 <TextField
-                                    id="tituloLicitacion"
-                                    name="tituloLicitacion_id"
+                                    id="tituloPerticular"
+                                    name="tituloPerticular_id"
                                     label="ESTADO"
                                     fullWidth
                                     margin="dense"
@@ -132,13 +132,13 @@ const FormularioBsuquedaLicitaciones = (props) => {
                                 
                             </Grid>
                           
-                            <Grid className="busqueda-licitacion__formulario__actions" item xs={12} sm={12}>
+                            <Grid className="busqueda-particular__formulario__actions" item xs={12} sm={12}>
                                 <Button type='submit' color='primary' variant='raised'>Buscar</Button>
                             </Grid>
                         </Grid>
                     </form>
                 </Grid>
-                <Grid className="busqueda-licitacion__agregar" item xs={2}>
+                <Grid className="busqueda-particular__agregar" item xs={2}>
                     <Button type='submit' color='primary' variant='contained'>+</Button>
                 </Grid>
             </Grid>
@@ -146,4 +146,4 @@ const FormularioBsuquedaLicitaciones = (props) => {
     )
 }
 
-export default FormularioBsuquedaLicitaciones;
+export default FormularioBsuquedaParticulares;

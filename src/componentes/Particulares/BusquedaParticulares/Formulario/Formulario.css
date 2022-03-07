@@ -1,10 +1,10 @@
-.busqueda-licitacion__titulo, .busqueda-licitacion__agregar{
+.busqueda-particulares__titulo, .busqueda-particulares__agregar{
   text-align: center;
   padding: 1rem;
 }
 
 
-.busqueda-licitacion__agregar button{
+.busqueda-particulares__agregar button{
   background: #509D53;
   color: #fff;
   font-size: 4rem;
@@ -13,11 +13,11 @@
   height: 6rem;
 }
 
-.busqueda-licitacion__agregar button:hover{
+.busqueda-particulares__agregar button:hover{
   background: #234b24;
 }
 
-.busqueda-licitacion__formulario__controls {
+.busqueda-particulares__formulario__controls {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -26,7 +26,7 @@
 
 }
 
-.busqueda-licitacion__formulario__control label {
+.busqueda-particulares__formulario__control label {
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
@@ -34,7 +34,7 @@
   align-items: center;
 }
 
-.busqueda-licitacion__formulario__control input {
+.busqueda-particulares__formulario__control input {
   font: inherit;
   padding: 0.5rem;
   border-radius: 6px;
@@ -43,16 +43,16 @@
   max-width: 100%;
 }
 
-.busqueda-licitacion__formulario__control select {
+.busqueda-particulares__formulario__control select {
   font: inherit;
   padding: 0.5rem 8em;
   border-radius: 6px;
 }
-.busqueda-licitacion__formulario__actions {
+.busqueda-particulares__formulario__actions {
   text-align: right;
 }
 
-.busqueda-licitacion__formulario__actions button{
+.busqueda-particulares__formulario__actions button{
   background: #006078;
   font-size: 15px;
   color: snow;
@@ -62,6 +62,6 @@
   border-radius: 2mm;
 }
 
-.busqueda-licitacion__formulario__actions button:hover{
+.busqueda-particulares__formulario__actions button:hover{
   background: #5b92a0;
 }
