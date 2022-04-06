@@ -5,12 +5,14 @@ import logo from '../../assets/imagenes/logo.png'
 
 import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import { BorderBottom } from '@material-ui/icons';
 import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+  useTheme,
+  useMediaQuery,
+  Grid
+} from "@material-ui/core";
+import DrawerComponent from "./DrawerComponent";
+import DropDownMenu from "./DropDownMenu"
+
 
 /* Manejo de la barra de navegacion del menu */
 
@@ -39,48 +41,68 @@ b) inmediata: Reactivo con drawer
 
 
 function NavigationBar() {
-  return (
-    <div >
-    <Navbar className="">
-        <img src={logo} alt="logo" className="logo" />
-      <NavItem  className="navlinks" nombre="Login"     liga="/login"/>
-      <NavItem  className="navlinks" nombre="Catalogos"  liga = "/catalogos"/>
+  const itemsDrop = [{ nombre: 'Licitación' , liga:'/licitaciones'}, { nombre: 'Documentos', liga:'/login' }];
+  const itemsDos = [{ nombre: 'Búsqueda' , liga:'/seleccion'}, { nombre: 'Login', liga:'/login' }];
+  const itemsCatalogos = [{ nombre: 'Areas' , liga:'/areas'}, { nombre: 'Etapas', liga:'/etapas' }, { nombre: 'Particulares', liga:'/particulares' }, { nombre: 'Servidores', liga:'/servidores' }];
+  const theme = useTheme();
+  let isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-      <NavItem nombre="Documentos" liga=""  className="link-dropdown">
-        <DropdownMenu></DropdownMenu>
-      </NavItem>
+return (
+  <div>
+  <Navbar className="">
+  <Grid container
+  direction="row"
+  justifyContent="space-between"
+  alignItems="flex-start" spacing={2}>
+    <Grid item xs={6}sm={6}  md={4}>
+      <img src={logo} alt="logo" className="logo" />
+
+    </Grid>
+   <Grid item sm="auto"></Grid>
+      
+   {isMobile ? 
+   
+   <Grid item xs={1} sm={2} >
+
+          <DrawerComponent />
+        </Grid>
+     :<Grid item sm={5} md={5}>
+        <Navbar className='border-none'>
+          <NavItem  className="navlinks" nombre="Login" liga="/login"/>
+          <DropDownMenu nombre ='Catálogos'  ligasMenu={itemsCatalogos} />
+          <DropDownMenu nombre ='Licitaciones'  ligasMenu={itemsDrop} />
+          <DropDownMenu nombre ='Busqueda' ligasMenu={itemsDos} />
+        </Navbar>
+      </Grid>
+  }
+  </Grid>
     </Navbar>
     <Outlet />
-   </div>
+    </div>
   );
 }
 
 function Navbar(props) {
   return (
-    <nav className="navbar">
+    <nav className={"navbar"+props.className}>
       <ul className="navbar-nav">{props.children}</ul>
     </nav>
   );
 }
 
+
+
 function NavItem(props) {
   const [open, setOpen] = useState(false);
-  console.log("props",props);
-  console.log("liga", props.liga)
-  console.log("liga", typeof (props.liga))
-
+/*
+  Manejo de Items individuales del menu 
+*/
   return (
-    <li>
-           <NavLink
-            className="navlink"
-
-           to= {props.liga !== ""?props.liga :""} 
-           
-
-            onClick={() => setOpen(!open)}
-          
-              style={({ 
-                isActive }) => {
+       <NavLink
+            className="navlinks"
+           to= {props.liga} 
+            onClick={() => setOpen(!open)}          
+              style={({isActive }) => {
                 return {
                   display: "block",
                   margin: "1rem 1rem",
@@ -94,57 +116,10 @@ function NavItem(props) {
 
       {open && props.children}
       </NavLink >
-    </li>
-  );
-}
 
-function DropdownMenu() {
-  const [activeMenu, setActiveMenu] = useState('main');
-  const [menuHeight, setMenuHeight] = useState(null);
-  const dropdownRef = useRef(null);
-
-  useEffect(() => {
-    setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
-  }, [])
-
-  function calcHeight(el) {
-    const height = el.offsetHeight*0.80;
-    setMenuHeight(height);
-  }
-
-  function DropdownItem(props) {
-    return (
-      <NavLink to="/about" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-        {props.children}
-        {props.nombre}
-        <span className="icon-right">{props.rightIcon}</span>
-      </NavLink>
-    );
-  }
-
-  return (
-    <div className="dropdown" style={{ height: menuHeight }} ref={dropdownRef}>
-
-      <CSSTransition
-        in={activeMenu === 'main'}
-        timeout={500}
-        classNames="menu-primary"
-        unmountOnExit
-        onEnter={calcHeight}>
-        <div className="menu">
-        <ul>
-          <li><DropdownItem nombre="Edición" /> 
-          </li>
-
-           <li />
-          <li><DropdownItem nombre="Búsqueda"   /> </li>
-          </ul>
-
-        </div>
-      </CSSTransition>
-
-    </div>
   );
 }
 
 export default NavigationBar;
+
+

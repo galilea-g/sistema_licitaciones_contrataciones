@@ -147,12 +147,16 @@ const ResultadoBusqueda = (props) => {
         {id: 10,idC: Math.random(), info:"Titulo de la particular 5", estatus:"01/01/2021"}
     ]
 
+
+    const configDialog = {
+        openDialog:dialogOpen,
+        fCloseModal: f_closeDialog,
+        title: "Ver datos del particular"
+    }
+
     return <div className="registros-particular">
-        <DialogComponent
-            openDialog={dialogOpen}
-            closeModal={f_closeDialog}
-            title="Resumen del particular"
-        >
+        <DialogComponent {...configDialog}>
+
             <ConsultaParticular
                 idData={idRowData}
             />

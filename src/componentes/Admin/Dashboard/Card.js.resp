@@ -1,0 +1,62 @@
+import "./Dashboard.css" 
+import TableC from "../../UI/Table/Table";
+
+function Card(props){
+	 const tableHeaders = [
+        {
+            id: 'idC',
+            align: 'left',
+            numeric: false,
+            disablePadding: true,
+            label: 'Id',
+        },
+        {
+            id: 'info',
+            align: 'left',
+            numeric: false,
+            disablePadding: true,
+            label: 'Info',
+        },
+        {
+            id: 'estatus',
+            align: 'left',
+            numeric: false,
+            disablePadding: true,
+            label: 'Estatus',
+        }
+    ];
+
+    const data = [
+        {id: 1,idC: Math.random(), info: "Titulo de la licitacion 1", estatus: "01/01/2021"},
+        {id: 2,idC: Math.random(), info:"Titulo de la licitacion 2", estatus:"01/01/2021"},
+        {id: 3,idC: Math.random(), info:"Titulo de la licitacion 3", estatus:"01/01/2021"},
+        {id: 4,idC: Math.random(), info:"Titulo de la licitacion 4", estatus:"01/01/2021"},
+        {id: 5,idC: Math.random(), info:"Titulo de la licitacion 5", estatus:"01/01/2021"}]
+    
+    const tableConfig = {
+        title: false,//"Resultado de búsqueda",
+        actions: ["see"],
+        pagination: false,
+        paginationConfig: {
+            pageSize: 5
+        },
+        multiselect: false,
+        sort: false
+    }
+
+    return(
+        <div>
+            <div className="title">{props.title}</div>
+            <div>
+            <TableC 
+            	headers={tableHeaders}
+            	registros={props.data}
+            	config={tableConfig}
+            />              
+            </div>
+          </div>
+
+    );
+}
+
+export default Card;
