@@ -1,0 +1,41 @@
+.toolbarStyle {
+    min-Height: 90px;
+  }
+
+.navlinks {
+    margin-right:0px;
+    display: flex;
+    color: #b3ffb3;
+}
+
+.logo {
+max-Width: 200px;
+
+}
+
+Content {
+margin-top: 72px;
+}
+
+.menuitem {
+    color: #232323;
+    text-decoration: none;
+    height: 100%;
+    padding: 15px 10px;
+    border-bottom: 4px solid transparent;
+    justify-Content: 'flex-end'; 
+}
+
+.link {
+    text-Decoration: none;
+    color: #003300;
+    font-size: 15px;
+    margin-Left: 10px;
+}
+
+
+.link:hover {
+    color: green;
+    border-bottom: 1px solid white;
+}
+

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { useState, useEffect } from "react";
-import { Grid, Box, Button } from "@mui/material";
+import { Grid, Button } from "@mui/material";
+import Box from '@mui/material/Box';
+
 import Login from "../Login/Login";
 import Card from "./Card";
 import InfoPersonal from "./InfoPersonalCard";
