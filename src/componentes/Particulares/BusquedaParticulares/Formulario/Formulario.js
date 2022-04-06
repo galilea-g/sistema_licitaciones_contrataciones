@@ -13,10 +13,12 @@ import {
     Checkbox,
     Button
   } from '@material-ui/core';
+
 import Stack from '@mui/material/Stack';
 import DialogComponent from '../../../UI/Dialog';
 import { Link } from "react-router-dom";
 import './ormulario.css';
+
 
 const FormularioBsuquedaParticulares = (props) => {
     const [folio, setFolio] = useState('');
@@ -132,13 +134,17 @@ const FormularioBsuquedaParticulares = (props) => {
                                 
                             </Grid>
                           
+
                             <Grid className="busqueda-particulares__formulario__actions" item xs={12} sm={12}>
+
                                 <Button type='submit' color='primary' variant='raised'>Buscar</Button>
                             </Grid>
                         </Grid>
                     </form>
                 </Grid>
+
                 <Grid className="busqueda-particulares__agregar" item xs={2}>
+
                     <Link to="/registroparticulares" className="link"><Button type='submit' color='primary' variant='contained'>+</Button></Link>
                 </Grid>
             </Grid>

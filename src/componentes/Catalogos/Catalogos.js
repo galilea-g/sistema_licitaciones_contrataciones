@@ -1,6 +1,9 @@
 import React from "react";
 import CatalogoEtapas from "./Areas/Areas";
+
 import Button from '@material-ui/core/Button';
+
+
 import AreaTabla from "./Areas/TablaArea";
 import useStyles from "./Modal/Estilos";
 import { Link } from "react-router-dom";
@@ -21,6 +24,7 @@ function Catalogos() {
       <Link to="/particulares" className="link"><Button className={styles.button}>Particulares</Button></Link>
       <br></br>
       <Link to="/etapas" className="link"><Button className={styles.button}>SERVIDORES</Button></Link>
+
       <br></br>
     
     </div>

@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { Modal, Button } from "@material-ui/core";
 import useStyles from "../Modal/Estilos";
+
 import EtapaTabla from "./TablaEtapa";
+
 import AgregarEtapa from "./AgregarEtapa";
 import { Link } from "react-router-dom";
 import add from "./add.png";
 import returnimage from "./returnimage.png";
+
 
 //Junta el componente de la tabla y del formulario, lo abre en un modal
 
