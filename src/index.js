@@ -16,6 +16,7 @@ import CatalogoAreas from "./componentes/Catalogos/Areas/Areas";
 import CatalogoEtapas from "./componentes/Catalogos/Etapas/Etapas";
 import Licitaciones from "./componentes/Licitaciones/Licitaciones"
 import ParticularesIndex from "./componentes/Particulares/Particulares";
+import ServidoresIndex from "./componentes/Servidores/Particulares";
 import RegistroParticulares from "./componentes/Particulares/Registro_particulares";
 
 const rootElement = document.getElementById("root");
@@ -32,6 +33,7 @@ render(
         <Route path="etapas" element={<CatalogoEtapas />} />
         <Route path="licitaciones" element={<Licitaciones />} />
         <Route path="particulares" element={<ParticularesIndex />} />
+        <Route path="servidores" element={<ServidoresIndex />} />
         <Route path="registroparticulares" element={<RegistroParticulares />} />
       </Route>
     </Routes>
